@@ -134,10 +134,10 @@ int main() {
             led_blue   = blue_on   ? 1 : 0;
             led_orange = orange_on ? 1 : 0;
 
-            if (tilt_left)  printf(">> LEFT  → BLUE on\r\n");
-            if (tilt_right) printf(">> RIGHT → ORANGE on\r\n");
-            if (tilt_up)    printf(">> UP    → BLUE on\r\n");
-            if (tilt_down)  printf(">> DOWN  → ORANGE on\r\n");
+            if (move_left)  printf(">> LEFT  → BLUE on\r\n");
+            if (move_right) printf(">> RIGHT → ORANGE on\r\n");
+            if (move_up)    printf(">> UP    → BLUE on\r\n");
+            if (move_down)  printf(">> DOWN  → ORANGE on\r\n");
         }
 
         ThisThread::sleep_for(std::chrono::milliseconds(LOOP_MS));
